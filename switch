@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    int torta = 1;
+    int palomitas = 2;
+    int agua = 3;
+    int dato;
+
+    cout << "==Menu==" << endl;
+    cout << "1) Torta" << endl;
+    cout << "2) Palomitas" << endl;
+    cout << "3) Agua" << endl;
+
+    cout << "Seleccione el producto" << endl;
+    cin >> dato;
+
+    switch (dato) {
+        case 1:
+            cout << "Precio: 20 pesos" << endl;
+            break;
+        case 2:
+            cout << "Palomitas: 10 pesos" << endl;
+            break;
+        case 3:
+            cout << "Agua: 8 pesos" << endl;
+            break;
+        default:
+            cout << "Producto no válido" << endl;
+            break;
+    }
+
+    return 0;
+}
